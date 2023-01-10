@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    display: inline-block;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 200px;
+    /* Height é altura */
+    width: 200px;
+    /* Width é Largura */
+}
+div:hover{
+    background-color: rgba(194, 240, 255, 0.514);
+    border-radius: 10px;
+    
+}
+div > p {
+    display: none;
+    border-radius: 10px;
+}
+div:hover > p{
+    display: block;
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid black;
+    height: 200px;
+    /* Height é altura */
+    width: 200px;
+    /* Width é Largura */
+}
+.especial:hover{
+    background-color: rgb(255, 152, 152);
+}

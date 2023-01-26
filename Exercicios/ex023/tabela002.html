@@ -8,17 +8,29 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 0, 0.589);
+        }
+        h1{
+            color: white;
+            font-variant: small-caps;
+            font-size: 40px;
         }
         caption{
             font-size:30px;
             font-weight: bold;
             padding: 10px;
-            background-color: rgba(128, 128, 128, 0.603)
+            color: white;
+            background-color: rgba(0, 0, 0, 0.418);
+            font-variant: small-caps;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.664);
+            
         }
         table{
             width: 600px;
             border-collapse: collapse ;
             font-size: 25px;
+            position: relative;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.664);
         }
         td, th{
             border: 1px solid black;
@@ -28,15 +40,29 @@
             background-color: rgba(0, 0, 0, 0.808);
             color: white;
         }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgba(0, 0, 0, 0.808);
+        }
         td.num{
             text-align: end;
         }
         tbody > tr:nth-child(odd){
             background-color: lightgray;
-            
-
         }
-        
+        tbody > tr:nth-child(even){
+            background-color: rgb(133, 133, 133);
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .mapa{
+            padding: 2px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.664);
+        }
     </style>
 </head>
 <body>
@@ -52,8 +78,10 @@
                 TR, TD, TH 
     -->
     <!-- SEMPRE QUE FOR UM DADO USE "TD" SEMPRE QUE FOR UM TITULO USE "TH" -->
-    <table>
-        <caption>Populção das unidades federativas do Brasil</caption>
+        <div class="container">
+            
+            <table>
+        <caption>População das unidades federativas do Brasil</caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
@@ -128,6 +156,9 @@
                 <td class="num"><strong>180.991.562</strong></td>
             </tr>
         </tfoot>
-    </table>
+    </table> 
+    <div class="mapa"><img src="img/mapa.PNG" alt="mapa" style="width: 350px;"> </div>
+        </div>
+    </div>
 </body>
 </html>
